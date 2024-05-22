@@ -4,7 +4,7 @@
   "description": "",
   "main": "api/index.js",
   "scripts": {
-    "test": "node api/index.js"
+    "test": "nodemon api/index.js"
   },
   "keywords": [],
   "author": "",
