@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 export const HeroSection = () => {
   const iconStyles =
-    "hover:opacity-20 active:scale-50 ease-in-out duration-700";
+    "hover:opacity-20 active:scale-50 ease-in-out duration-700 opacity-85";
   return (
     <div className="HeroSection flex flex-col h-[91vh] md:max-w-5xl justify-center items-center space-y-10 mx-5 md:flex md:items-start md:mx-auto md:space-y-0 md:my-0 ">
       <div>
@@ -29,7 +29,7 @@ export const HeroSection = () => {
           initial={{opacity:0,y:-70}}
           whileInView={{opacity:1,y:0}}
           transition={{ease:'backInOut',duration:1}}
-            className="div flex justify-center  backdrop-blur-sm bg-white/30 p-2 animate-pulse order-1 w-48"
+            className="div flex justify-center  backdrop-blur-sm bg-white/30 p-2 order-1 w-48"
             style={{ borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70% " }}
           >
             <motion.img

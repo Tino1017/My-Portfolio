@@ -25,16 +25,16 @@ export const Contact = () => {
   };
 
   const inputStyles =
-    "bg-transparent backdrop-blur-md bg-purple-400 bg-opacity-15 p-3 rounded-md placeholder:text-gray text-white outline-none md:p-3 mt";
+    "bg-transparent backdrop-blur-md bg-purple-400 bg-opacity-15 p-3 rounded-md placeholder:text-gray text-white outline-none md:p-3 border border-neutral-900";
   return (
     <>
-      <h1 className="text-4xl font-semibold text-center ">
+      <h1 className="text-4xl font-semibold text-center mt-14">
         Get In <span style={{ color: "#9482EB" }}>Touch</span>
       </h1>
       <form
         onSubmit={handleSubmit}
         action="submit"
-        className="text-xl flex flex-col items pt-10 md:max-w-2xl md:flex md:flex-col md:mx-auto md:text-sm"
+        className="text-md flex flex-col items pt-10 md:max-w-2xl md:flex md:flex-col md:mx-auto md:text-sm mb-10"
         style={{
           backgroundImage: `url(${email})`,
           backgroundSize: "center",
@@ -66,11 +66,11 @@ export const Contact = () => {
             name=""
             id=""
             placeholder="Message"
-            className=" backdrop-blur-sm bg-purple-400 bg-opacity-15 p-3 rounded-md placeholder:text-gray min-h-[200px] outline-none"
+            className=" backdrop-blur-md bg-purple-400 bg-opacity-15 p-3 rounded-md placeholder:text-gray min-h-[200px] outline-none"
           />
           <button
             type="submit"
-            className=" flex items-center justify-center gap-3 p-3 bg-purple-700 bg-opacity-15 font-medium rounded-md hover:bg-opacity-5 duration-500"
+            className=" flex items-center justify-center gap-3 p-3 bg-purple-700 bg-opacity-15 font-medium rounded-md hover:bg-opacity-5 duration-500 "
             style={{ backgroundColor: "" }}
           >
             Send Email <HiOutlineMail fontSize={22} />
