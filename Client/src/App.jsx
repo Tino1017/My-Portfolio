@@ -3,11 +3,12 @@ import { Portfolio } from "./Imports"
 
 
 function App() {
-  
-
   return (
     <>
+    <div>
     <Portfolio/>
+    </div>
+    
     </>
   )
 }
