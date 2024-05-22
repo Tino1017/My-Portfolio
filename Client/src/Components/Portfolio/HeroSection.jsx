@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactTyped } from "react-typed";
+
 import HeroImage from "../Images/HeroImage.jpg";
 import { FaFileArrowDown } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";

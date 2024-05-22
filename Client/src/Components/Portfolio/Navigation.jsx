@@ -32,12 +32,12 @@ export const Navigation = () => {
   ];
   return (
     <>
-      <motion.div 
-      initial={{opacity:0,y:-20}}
-      whileInView={{opacity:1,y:0}}
-      transition={{ease:'easeOut',duration:0.8}}
-
-      className="flex justify-center pt-5">
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ ease: "easeOut", duration: 0.8 }}
+        className="flex justify-center pt-5"
+      >
         <div className="hidden sm:block">
           <div className="flex mx-auto max-w-lg justify-between rounded-full">
             {navigation.map((props, index) => (
