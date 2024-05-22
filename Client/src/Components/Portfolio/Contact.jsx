@@ -25,11 +25,11 @@ export const Contact = () => {
   };
 
   const inputStyles =
-    "bg-transparent backdrop-blur-md bg-purple-400 bg-opacity-15 p-3 rounded-md placeholder:text-gray text-white outline-none md:p-3 ";
+    "bg-transparent backdrop-blur-md bg-purple-400 bg-opacity-15 p-3 rounded-md placeholder:text-gray text-white outline-none md:p-3";
   return (
     <>
       <h1 className="text-4xl font-semibold text-center mt-14">
-        Get In <span style={{ color: "#9482EB" }}>Touch</span>
+        Get In<span style={{ color: "#9482EB" }}>Touch</span>
       </h1>
       <form
         onSubmit={handleSubmit}
