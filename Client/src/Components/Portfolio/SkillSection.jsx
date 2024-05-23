@@ -100,7 +100,7 @@ export const SkillSection = () => {
       <motion.h1 initial={{opacity:0,y:-70}}
             whileInView={{opacity:1,y:0}}
             transition={{ease:'backInOut',duration:0.8,delay:0.7}} className="text-4xl font-semibold my-10">My Skills </motion.h1>
-      <div className="flex flex-col items-center  backdrop-blur-sm bg-purple-300 bg-opacity-5 rounded-3xl px-5 py-8 min-w-[355px] max-h-fit max-w-sm sm:max-w-xl md:max-w-6xl md:px-10 ">
+      <div className="flex flex-col items-center   backdrop-blur-md rounded-lg bg-purple-500 bg-opacity-10 px-5 py-8 min-w-[355px] max-h-fit max-w-sm sm:max-w-xl md:max-w-6xl md:px-10 ">
         <h1
           className="text-center font-bold active:scale-75 duration-200 mb-[1px] "
           onClick={handleHeadingClick}
