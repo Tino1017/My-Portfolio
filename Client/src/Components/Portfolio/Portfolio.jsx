@@ -4,6 +4,7 @@ import { HeroSection } from "./HeroSection";
 import { SkillSection } from "./SkillSection";
 import { About } from "./About";
 import{ Contact} from "./Contact";
+import { MyProjects } from "./MyProjects";
 
 export const Portfolio = () => {
   return (
@@ -13,6 +14,7 @@ export const Portfolio = () => {
       <HeroSection />
       <About/>
       <SkillSection/>
+      <MyProjects/>
       <Contact/>
     </>
   );

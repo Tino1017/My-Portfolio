@@ -14,12 +14,12 @@ export const About = () => {
        initial={{opacity:0,y:-70}}
        whileInView={{opacity:1,y:0}}
        transition={{ease:'backInOut',duration:1,delay:0.9}} className={styles}>
-        a passionate Front-End Developer and Figma UI/UX Designer with a keen
+        I am a passionate Front-End Developer and Figma UI/UX Designer with a keen
         eye for detail and a love for creating seamless user experiences. With a
         solid foundation in web development and a flair for design, I thrive at
-        the intersection of aesthetics and functionality. Crafting clean,
+        the intersection of aesthetics and functionality.I aim to craft clean,
         efficient, and maintainable code to build interactive and responsive web
-        applications. Utilizing Figma to design user interfaces that are not
+        applications, while utilizing Figma to design user interfaces that are not
         only visually appealing but also highly functional and user-centric.
         Building and customizing WordPress sites to meet diverse client needs,
         ensuring ease of use and scalability.
