@@ -54,15 +54,15 @@ export const HeroSection = () => {
           RESUME
           <FaFileArrowDown fontSize={30} />
         </button>
-        <a href="" className={`${iconStyles}`}>
+        <a href="https://github.com/Tino1017" className={`${iconStyles}`}>
           <FaGithub fontSize={30} />
         </a>
-        <a href="" className={`${iconStyles}`}>
-          {" "}
+        <a href="https://www.linkedin.com/in/tinotenda-magobeya-02626a293/" className={`${iconStyles}`}>
+         
           <FaLinkedinIn fontSize={30} />
         </a>
         <a href="" className={`${iconStyles}`}>
-          {" "}
+          
           <MdEmail fontSize={30} />
         </a>
       </motion.div>
