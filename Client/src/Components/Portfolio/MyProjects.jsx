@@ -48,7 +48,7 @@ export const MyProjects = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center" id="projects">
       <motion.h1
         initial={{ opacity: 0, y: -70 }}
         whileInView={{ opacity: 1, y: 0 }}

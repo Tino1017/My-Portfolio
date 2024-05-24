@@ -97,7 +97,7 @@ export const SkillSection = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center mt-3">
+    <div className="flex flex-col justify-center items-center mt-3" id="skills">
       <motion.h1
         initial={{ opacity: 0, y: -70 }}
         whileInView={{ opacity: 1, y: 0 }}

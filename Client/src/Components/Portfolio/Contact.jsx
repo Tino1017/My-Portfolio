@@ -28,7 +28,7 @@ export const Contact = () => {
   const inputStyles =
     "bg-transparent backdrop-blur-md bg-purple-400 bg-opacity-15 p-3 rounded-md placeholder:text-gray text-white outline-none md:p-3";
   return (
-    <>
+    <div id="contact">
       <motion.h1
         initial={{ opacity: 0, y: -70 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -95,6 +95,6 @@ export const Contact = () => {
           </motion.button>
         </div>
       </form>
-    </>
+    </div>
   );
 };

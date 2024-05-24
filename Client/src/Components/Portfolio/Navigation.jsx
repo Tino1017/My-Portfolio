@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { RiMenu5Fill } from "react-icons/ri";
 import { motion } from "framer-motion";
+import {HashLink as Link} from 'react-router-hash-link';
 export const Navigation = () => {
   const [nav, SetNav] = useState(false);
   const handleMenu = () => {
@@ -11,23 +12,23 @@ export const Navigation = () => {
   const navigation = [
     {
       navigationLink: "Home",
-      url: "",
+      url: "#home",
     },
     {
       navigationLink: "Skills",
-      url: "",
+      url: "#skills",
     },
     {
       navigationLink: "Projects",
-      url: "",
+      url: "#projects",
     },
     {
       navigationLink: "About",
-      url: "",
+      url: "#about",
     },
     {
       navigationLink: "Contact",
-      url: "",
+      url: "#contact",
     },
   ];
   return (
@@ -41,9 +42,9 @@ export const Navigation = () => {
         <div className="hidden sm:block">
           <div className="flex mx-auto max-w-lg justify-between rounded-full">
             {navigation.map((props, index) => (
-              <a  key={index} href={props.url} className=" pr-4 hover:text-purple-300 duration-500 active:scale-50">
+              <Link to={props.url}  key={index} className=" pr-4 hover:text-purple-300 duration-500 active:scale-50">
                 {props.navigationLink}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -64,7 +65,7 @@ export const Navigation = () => {
             }
           >
             {navigation.map((props, index) => (
-              <a className='hover:text-purple-500' key={index}>{props.navigationLink}</a>
+              <Link to={props.url} className='hover:text-purple-500' key={index}>{props.navigationLink}</Link>
             ))}
           </div>
         </div>

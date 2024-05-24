@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export const About = () => {
     const styles="text-md min-w-sm max-w-sm p-5 text-center md:min-w-md md:max-w-4xl md:text-center"
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center" id="about" >
       <motion.h1 
      initial={{opacity:0,y:-70}}
      whileInView={{opacity:1,y:0}}
