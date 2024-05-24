@@ -3,6 +3,7 @@ import email from "../Images/email.svg";
 import { HiOutlineMail } from "react-icons/hi";
 import { useState } from "react";
 import axios from "axios";
+import { motion } from "framer-motion";
 export const Contact = () => {
   const [userEmail, setUserEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -28,9 +29,14 @@ export const Contact = () => {
     "bg-transparent backdrop-blur-md bg-purple-400 bg-opacity-15 p-3 rounded-md placeholder:text-gray text-white outline-none md:p-3";
   return (
     <>
-      <h1 className="text-4xl font-semibold text-center mt-14">
+      <motion.h1
+        initial={{ opacity: 0, y: -70 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ ease: "backInOut", duration: 0.8, delay: 0.7 }}
+        className="text-4xl font-semibold text-center mt-14"
+      >
         Get In<span style={{ color: "#9482EB" }}>Touch</span>
-      </h1>
+      </motion.h1>
       <form
         onSubmit={handleSubmit}
         action="submit"
@@ -43,14 +49,20 @@ export const Contact = () => {
         }}
       >
         <div className="flex flex-col px-5 gap-y-3">
-          <input
+          <motion.input
+          initial={{ opacity: 0, y: -70 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "backInOut", duration: 0.8, delay: 0.8 }}
             type="email"
             value={userEmail}
             onChange={(e) => setUserEmail(e.target.value)}
             placeholder="Email address"
             className={inputStyles}
           />
-          <input
+          <motion.input
+          initial={{ opacity: 0, y: -70 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "backInOut", duration: 0.8, delay: 0.9 }}
             type="text"
             value={subject}
             onChange={(e) => setSubject(e.target.value)}
@@ -59,7 +71,10 @@ export const Contact = () => {
             placeholder="Subject"
             className={inputStyles}
           />
-          <textarea
+          <motion.textarea
+          initial={{ opacity: 0, y: -70 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "backInOut", duration: 0.8, delay: 0.95 }}
             type="textarea"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
@@ -68,13 +83,16 @@ export const Contact = () => {
             placeholder="Message"
             className=" backdrop-blur-md bg-purple-400 bg-opacity-15 p-3 rounded-md placeholder:text-gray min-h-[200px] outline-none"
           />
-          <button
+          <motion.button
+          initial={{ opacity: 0, y: -70 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "backInOut", duration: 0.8, delay: 0.98 }}
             type="submit"
             className=" flex items-center justify-center gap-3 p-3 bg-purple-700 bg-opacity-15 font-medium rounded-md hover:bg-opacity-5 duration-500 "
             style={{ backgroundColor: "" }}
           >
             Send Email <HiOutlineMail fontSize={22} />
-          </button>
+          </motion.button>
         </div>
       </form>
     </>

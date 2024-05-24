@@ -12,13 +12,12 @@ import redux from "../Images/redux.svg";
 import tailwindcss from "../Images/tailwindcss.svg";
 import react from "../Images/react.svg";
 import nodejs from "../Images/nodejs.svg";
-import figma from '../Images/figma.svg';
-import responsive from '../Images/responsive.svg';
-import wireframe from '../Images/wireframe.svg';
-import product from '../Images/product.svg';
-import prototype from '../Images/prototype.svg';
+import figma from "../Images/figma.svg";
+import responsive from "../Images/responsive.svg";
+import wireframe from "../Images/wireframe.svg";
+import product from "../Images/product.svg";
+import prototype from "../Images/prototype.svg";
 import { motion } from "framer-motion";
-
 
 export const SkillSection = () => {
   const [headingActive, setHeadingActive] = useState(false);
@@ -67,40 +66,49 @@ export const SkillSection = () => {
   ];
   const designerLabel = [
     {
-     icon:figma,
-     label:'FIGMA'
+      icon: figma,
+      label: "FIGMA",
     },
     {
-     icon:responsive,
-     label:'RESPONSIVE DESIGN'
+      icon: responsive,
+      label: "RESPONSIVE DESIGN",
     },
     {
-     icon:wireframe,
-     label:'WIRE FRAMING'
+      icon: wireframe,
+      label: "WIRE FRAMING",
     },
     {
-     icon:prototype,
-     label:'USER FLOWS'
+      icon: prototype,
+      label: "USER FLOWS",
     },
     {
-     icon:product,
-     label:'PRODUCT DESIGN'
+      icon: product,
+      label: "PRODUCT DESIGN",
     },
     {
-    
-      label:'SITE MAPS'
+      label: "SITE MAPS",
     },
     {
-      label:'INTERACTION DESIGN'
-    }
-   ];
+      label: "INTERACTION DESIGN",
+    },
+  ];
 
   return (
     <div className="flex flex-col justify-center items-center mt-3">
-      <motion.h1 initial={{opacity:0,y:-70}}
-            whileInView={{opacity:1,y:0}}
-            transition={{ease:'backInOut',duration:0.8,delay:0.7}} className="text-4xl font-semibold my-10">My Skills </motion.h1>
+      <motion.h1
+        initial={{ opacity: 0, y: -70 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ ease: "backInOut", duration: 0.8, delay: 0.7 }}
+        className="text-4xl font-semibold my-12"
+      >
+        My Skills
+      </motion.h1>
       <div className="flex flex-col items-center   backdrop-blur-md rounded-lg bg-purple-500 bg-opacity-10 px-5 py-8 min-w-[355px] max-h-fit max-w-sm sm:max-w-xl md:max-w-6xl md:px-10 ">
+        <motion.div
+         initial={{ opacity: 0, y: -70 }}
+         whileInView={{ opacity: 1, y: 0 }}
+         transition={{ ease: "backInOut", duration: 0.8, delay: 0.8 }}
+        >
         <h1
           className="text-center font-bold active:scale-75 duration-200 mb-[1px] "
           onClick={handleHeadingClick}
@@ -113,6 +121,8 @@ export const SkillSection = () => {
         >
           {!headingActive ? " UI UX DESIGN" : "FRONT END DEVELOPMENT"}
         </h1>
+        </motion.div>
+        
 
         <div
           className={`${
@@ -126,7 +136,13 @@ export const SkillSection = () => {
           ))}
         </div>
         {/* UI UX Skills */}
-        <div className={`${headingActive ? "grid gap-y-8 p-5  sm:grid sm:grid-cols-2 sm:gap-y-10 sm:gap-x-6 lg:grid lg:grid-cols-3 md:gap-x-20 duration-700" : "hidden"}`}>
+        <div
+          className={`${
+            headingActive
+              ? "grid gap-y-8 p-5  sm:grid sm:grid-cols-2 sm:gap-y-10 sm:gap-x-6 lg:grid lg:grid-cols-3 md:gap-x-20 duration-700"
+              : "hidden"
+          }`}
+        >
           {designerLabel.map((props, index) => (
             <SkillsUI key={index} icon={props.icon} label={props.label} />
           ))}

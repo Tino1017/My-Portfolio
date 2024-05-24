@@ -15,7 +15,7 @@ export const ProjectsUI = ({
   return (
     <div className=" text-md p-3   backdrop-blur-md rounded-lg bg-purple-500 bg-opacity-10">
       <div>
-        <img src={projectImage} className="rounded-md md:max-w-md"  alt="" />
+        <img src={projectImage} className="rounded-md md:max-w-md" alt="" />
       </div>
       <div className="flex flex-col ">
         <h1 className="font-bold text-3xl pt-10 pb-2">{projectName}</h1>

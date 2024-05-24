@@ -9,7 +9,7 @@ export const About = () => {
      initial={{opacity:0,y:-70}}
      whileInView={{opacity:1,y:0}}
      transition={{ease:'backInOut',duration:0.8,delay:0.7}}
-      className="text-center font-semibold text-4xl pb-5">About Me </motion.h1>
+      className="text-center font-semibold text-4xl pb-10">About Me </motion.h1>
       <motion.p
        initial={{opacity:0,y:-70}}
        whileInView={{opacity:1,y:0}}
