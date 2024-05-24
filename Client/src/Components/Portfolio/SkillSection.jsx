@@ -18,7 +18,8 @@ import wireframe from "../Images/wireframe.svg";
 import product from "../Images/product.svg";
 import prototype from "../Images/prototype.svg";
 import { motion } from "framer-motion";
-
+import sitemaps from '../Images/sitemaps.svg'
+import interaction from '../Images/interaction.svg'
 export const SkillSection = () => {
   const [headingActive, setHeadingActive] = useState(false);
   const handleHeadingClick = () => {
@@ -86,11 +87,13 @@ export const SkillSection = () => {
       label: "PRODUCT DESIGN",
     },
     {
+      icon:sitemaps,
       label: "SITE MAPS",
     },
-    {
-      label: "INTERACTION DESIGN",
-    },
+    // {
+    //   // icon:interaction,
+    //   // label: "INTERACTION DESIGN",
+    // },
   ];
 
   return (
