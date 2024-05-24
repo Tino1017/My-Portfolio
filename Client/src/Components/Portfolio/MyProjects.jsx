@@ -30,8 +30,8 @@ export const MyProjects = () => {
       projectName: "Kick Craze",
       description:
         "This is a web Application where users can shop for sneakers. This web app contains features like video call and a student community",
-      liveDemo: "https://kick-craze.vercel.app/",
-      repoLink: "https://github.com/Tino1017/Kick-Craze",
+      liveDemo: "https://github.com/Tino1017/Kick-Craze",
+      repoLink: "https://kick-craze.vercel.app/...",
     },
   ];
   const technologiesUsed = [
