@@ -150,12 +150,12 @@ export const SkillSection = () => {
             <SkillsUI key={index} icon={props.icon} label={props.label} />
           ))}
         </div>
-        <button className="hover:opacity-60 hover:scale-110 active:scale-75 duration-150">
+        {/* <button className="hover:opacity-60 hover:scale-110 active:scale-75 duration-150">
           <IoIosArrowDroprightCircle
             fontSize={40}
             style={{ color: "#9482EB", marginTop: "30px" }}
           />
-        </button>
+        </button> */}
       </div>
     </div>
   );

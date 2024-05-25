@@ -4,6 +4,7 @@ import helpconnect from "../Images/helpconnect.png";
 import kickCraze from "../Images/kickCraze.png";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Design } from "./UI/Design";
 
 export const MyProjects = () => {
   const [projectActive, setProjectActive] = useState();
@@ -15,6 +16,14 @@ export const MyProjects = () => {
       ? setDesignActive(designActive)
       : setProjectActive(!projectActive);
   };
+
+  
+const designProjectsArray=[<iframe
+  width="330"
+  height="450"
+  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSOvmydeJ9XRyXLAm0DETCp%2FUntitled%3Fnode-id%3D1-135%26t%3DTLGcLn4iCw507cah-1%26scaling%3Dscale-down%26page-id%3D0%253A1"
+  allowfullscreen
+></iframe>]
 
   const projectCard = [
     {
@@ -107,10 +116,13 @@ export const MyProjects = () => {
       </motion.div>
       <div
         className={
-          designActive ? "block font-semibold text-xl py-32" : "hidden"
+          designActive ? "block font-semibold text-xl p-3 backdrop-blur-md rounded-md bg-purple-500 bg-opacity-10" : "hidden"
         }
       >
-        PROJECTS <span className="text-secondary">COMING SOON!</span>
+        {designProjectsArray.map((props,index)=>(
+          <Design key={index}
+          designProject={props}/>
+        ))}
       </div>
     </div>
   );
