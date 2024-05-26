@@ -2,12 +2,12 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "api/index.js",
+  "main": "src/app.js",
   "scripts": {
-    "dev": "nodemon api/index.js",
-  "build": "next build",
-  "start": "NODE_ENV=production node api/index.js",
-  "test": "nodemon api/index.js"
+    "dev": "nodemon src/app.js",
+  
+  "start": "NODE_ENV=production node src/app.js",
+  "test": "nodemon src/app.js"
   },
   "keywords": [],
   "author": "",

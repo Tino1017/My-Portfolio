@@ -20,6 +20,9 @@ export const Contact = () => {
     try {
       const response = await axios.post("http://localhost:3000/", formData);
       console.log(response.data);
+      setMessage('');
+      setSubject('');
+      setUserEmail('');
     } catch (error) {
       console.log(error);
     }

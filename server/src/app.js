@@ -11,8 +11,8 @@ app.post("/", async (req, res) => {
   const transporter = createTransport({
     service: "gmail",
     auth: {
-      user: "tinotayman1@gmail.com",
-      pass: "qgeehvtjyeywbluj",
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
     },
   });
 
