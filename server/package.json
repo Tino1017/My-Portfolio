@@ -4,7 +4,10 @@
   "description": "",
   "main": "api/index.js",
   "scripts": {
-    "test": "nodemon api/index.js"
+    "dev": "nodemon api/index.js",
+  "build": "next build",
+  "start": "NODE_ENV=production node api/index.js",
+  "test": "nodemon api/index.js"
   },
   "keywords": [],
   "author": "",
