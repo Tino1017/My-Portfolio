@@ -127,11 +127,11 @@ projectName:'Project Name'}]
           designActive ? "block font-semibold text-xl p-3  backdrop-blur-md rounded-md bg-purple-500 bg-opacity-10" : "hidden"
         }
       >
-        {designProjectsArray.map((props,index)=>(
+        {/* {designProjectsArray.map((props,index)=>(
           <Design key={index}
           designProject={props.project}
           />
-        ))}
+        ))} */}
       </div>
     </div>
   );
