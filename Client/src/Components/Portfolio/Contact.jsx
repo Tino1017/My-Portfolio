@@ -48,7 +48,7 @@ export const Contact = () => {
           backgroundImage: `url(${email})`,
           backgroundSize: "center",
           backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
+          backgroundPosition: "center ",
         }}
       >
         <div className="flex flex-col px-5 gap-y-3">

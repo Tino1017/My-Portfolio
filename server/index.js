@@ -5,9 +5,15 @@ const app = express();
 app.use(express.json());
 app.use(cors()); // Enable CORS
 
+app.get('/',(req,res)=>{
+  res.send('Server Running')
+})
+
+
 app.post("/", async (req, res) => {
   const { userAdress, userSubject, userMessage } = req.body;
 
+  
   const transporter = createTransport({
     service: "gmail",
     auth: {
