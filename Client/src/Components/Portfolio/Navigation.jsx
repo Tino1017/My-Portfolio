@@ -42,7 +42,7 @@ export const Navigation = () => {
         <div className="hidden sm:block">
           <div className="flex mx-auto max-w-lg justify-between rounded-full">
             {navigation.map((props, index) => (
-              <Link to={props.url}  key={index} className=" pr-4 hover:text-purple-300 duration-500 active:scale-50">
+              <Link to={props.url}  key={index} className=" scroll-smooth pr-4 hover:text-purple-300 duration-500 active:scale-50">
                 {props.navigationLink}
               </Link>
             ))}
@@ -65,7 +65,7 @@ export const Navigation = () => {
             }
           >
             {navigation.map((props, index) => (
-              <Link to={props.url} className='hover:text-purple-500' key={index}>{props.navigationLink}</Link>
+              <Link to={props.url} className='hover:text-purple-500 scroll-smooth' key={index}>{props.navigationLink}</Link>
             ))}
           </div>
         </div>

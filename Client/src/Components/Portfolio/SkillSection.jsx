@@ -18,8 +18,8 @@ import wireframe from "../Images/wireframe.svg";
 import product from "../Images/product.svg";
 import prototype from "../Images/prototype.svg";
 import { motion } from "framer-motion";
-import sitemaps from '../Images/sitemaps.svg'
-import interaction from '../Images/interaction.svg'
+import sitemaps from "../Images/sitemaps.svg";
+import interaction from "../Images/interaction.svg";
 export const SkillSection = () => {
   const [headingActive, setHeadingActive] = useState(false);
   const handleHeadingClick = () => {
@@ -87,7 +87,7 @@ export const SkillSection = () => {
       label: "PRODUCT DESIGN",
     },
     {
-      icon:sitemaps,
+      icon: sitemaps,
       label: "SITE MAPS",
     },
     // {
@@ -97,35 +97,36 @@ export const SkillSection = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center mt-3" id="skills">
+    <div className=" flex flex-col justify-center items-center mt-3" id="skills">
       <motion.h1
         initial={{ opacity: 0, y: -70 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ ease: "backInOut", duration: 0.8, delay: 0.7 }}
+        transition={{ ease: "backInOut", duration: 0.6, delay: 0.7 }}
         className="text-4xl font-semibold my-12"
       >
         My Skills
       </motion.h1>
-      <div className="flex flex-col items-center   backdrop-blur-md rounded-lg bg-purple-500 bg-opacity-10 px-5 py-8 min-w-[355px] max-h-fit max-w-sm sm:max-w-xl md:max-w-6xl md:px-10 ">
+      <div
+        className="flex flex-col items-center backdrop-blur-md rounded-lg bg-purple-500 bg-opacity-10 px-5 py-8 min-w-[355px] max-h-fit max-w-sm sm:max-w-xl md:max-w-6xl md:px-10 "
+      >
         <motion.div
-         initial={{ opacity: 0, y: -70 }}
-         whileInView={{ opacity: 1, y: 0 }}
-         transition={{ ease: "backInOut", duration: 0.8, delay: 0.8 }}
+          initial={{ opacity: 0, y: -70 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "backInOut", duration: 0.8, delay: 0.8 }}
         >
-        <h1
-          className="text-center font-bold active:scale-75 duration-200 mb-[1px] "
-          onClick={handleHeadingClick}
-        >
-          {headingActive ? " UI UX DESIGN" : "FRONT END DEVELOPMENT"}
-        </h1>
-        <h1
-          className="text-center font-bold opacity-30 active:scale-75 duration-200 mb-10"
-          onClick={handleHeadingClick}
-        >
-          {!headingActive ? " UI UX DESIGN" : "FRONT END DEVELOPMENT"}
-        </h1>
+          <h1
+            className="text-center font-bold active:scale-75 duration-200 mb-[1px] "
+            onClick={handleHeadingClick}
+          >
+            {headingActive ? " UI UX DESIGN" : "FRONT END DEVELOPMENT"}
+          </h1>
+          <h1
+            className="text-center font-bold opacity-30 active:scale-75 duration-200 mb-10"
+            onClick={handleHeadingClick}
+          >
+            {!headingActive ? " UI UX DESIGN" : "FRONT END DEVELOPMENT"}
+          </h1>
         </motion.div>
-        
 
         <div
           className={`${
