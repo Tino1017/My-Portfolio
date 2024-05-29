@@ -5,7 +5,7 @@ import { SkillSection } from "./SkillSection";
 import { About } from "./About";
 import{ Contact} from "./Contact";
 import { MyProjects } from "./MyProjects";
-import { Arrow } from "./Arrow";
+// import { Arrow } from "./Arrow";
 
 // import { Slogan } from "../Portfolio/Slogan";
 
@@ -15,7 +15,7 @@ export const Portfolio = () => {
      
       <Navigation />
       <HeroSection />
-      <Arrow/>
+      {/* <Arrow/> */}
       {/* <Slogan/> */}
       <About/>
       <SkillSection/>

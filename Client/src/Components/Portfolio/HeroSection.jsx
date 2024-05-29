@@ -11,7 +11,7 @@ export const HeroSection = () => {
   const iconStyles =
     "hover:opacity-20 active:scale-50 ease-in-out duration-700 opacity-85";
   return (
-    <div className="HeroSection flex flex-col h-[84vh] md:max-w-5xl justify-center items-center space-y-10 mx-5 md:flex md:items-start md:mx-auto md:space-y-0 md:my-0 " id="home">
+    <div className="HeroSection flex flex-col h-[91vh] md:max-w-5xl justify-center items-center space-y-10 mx-5 md:flex md:items-start md:mx-auto md:space-y-0 md:my-0 " id="home">
       <div>
         <div className="TextAndImage flex flex-col items-center gap-10 md:flex-row md:items-center md:space-x-20 ">
           <div className="div order-2 md:order-1">
@@ -35,7 +35,7 @@ export const HeroSection = () => {
             <motion.img
             initial={{opacity:0,y:-70}}
             whileInView={{opacity:1,y:0}}
-            transition={{ease:'backInOut',duration:1,delay:0.4}}
+            transition={{ease:' backInOut',duration:1,delay:0.4}}
               src={HeroImage}
               width={150}
               alt=""
