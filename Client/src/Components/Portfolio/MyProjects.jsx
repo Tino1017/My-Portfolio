@@ -6,6 +6,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Design } from "./UI/Design";
 
+
 export const MyProjects = () => {
   const [projectActive, setProjectActive] = useState();
   const [designActive, setDesignActive] = useState();
@@ -23,15 +24,7 @@ const designProjectsArray=[{project:<iframe
   height="450"
   src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSOvmydeJ9XRyXLAm0DETCp%2FUntitled%3Fnode-id%3D1-135%26t%3DTLGcLn4iCw507cah-1%26scaling%3Dscale-down%26page-id%3D0%253A1"
   allowfullscreen
-></iframe>,
-projectName:'Project Name'},
-{project:<iframe
-  width="330"
-  height="450"
-  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSOvmydeJ9XRyXLAm0DETCp%2FUntitled%3Fnode-id%3D1-135%26t%3DTLGcLn4iCw507cah-1%26scaling%3Dscale-down%26page-id%3D0%253A1"
-  allowfullscreen
-></iframe>,
-projectName:'Project Name'}]
+></iframe>}]
 
   const projectCard = [
     {
@@ -127,11 +120,16 @@ projectName:'Project Name'}]
           designActive ? "block font-semibold text-xl p-3  backdrop-blur-md rounded-md bg-purple-500 bg-opacity-10" : "hidden"
         }
       >
-        {/* {designProjectsArray.map((props,index)=>(
-          <Design key={index}
+        {designProjectsArray.map((props,index)=>(
+          <div className="">
+            <Design key={index}
           designProject={props.project}
           />
-        ))} */}
+          </div>
+          
+        ))}
+
+
       </div>
     </div>
   );

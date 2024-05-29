@@ -1,5 +1,5 @@
 import React from "react";
-
+import { HashLink as Link } from "react-router-hash-link";
 import HeroImage from "../Images/HeroImage.jpg";
 import { FaFileArrowDown } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
@@ -50,10 +50,10 @@ export const HeroSection = () => {
       whileInView={{opacity:1,y:0}}
       transition={{ease:'backInOut',duration:1,delay:0.9}}
       className=" flex items-center gap-10 md:flex md:justify-center">
-        <button className=" rounded-full p-3 flex items-center gap-4 font-semibold text-md  active:scale-50 duration-700 hover:opacity-20">
+        <a href='https://drive.google.com/file/d/1Cx_pEmfc5uxbhJpfPYEn8Fxn5X4IJVgc/view?usp=drive_link' className=" rounded-full p-3 flex items-center gap-4 font-semibold text-md  active:scale-50 duration-700 hover:opacity-20">
           RESUME
           <FaFileArrowDown fontSize={30} />
-        </button>
+        </a>
         <a href="https://github.com/Tino1017" className={`${iconStyles}`}>
           <FaGithub fontSize={30} />
         </a>
@@ -61,10 +61,10 @@ export const HeroSection = () => {
          
           <FaLinkedinIn fontSize={30} />
         </a>
-        <a href="" className={`${iconStyles}`}>
+        <Link to='#contact' href="tmagobeya1@gmail.com" className={`${iconStyles}`}>
           
           <MdEmail fontSize={30} />
-        </a>
+        </Link>
       </motion.div>
     </div>
   );
