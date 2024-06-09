@@ -5,6 +5,7 @@ import kickCraze from "../Images/kickCraze.png";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Design } from "./UI/Design";
+import sanakin from '../Images/sanakin.png';
 
 
 export const MyProjects = () => {
@@ -36,12 +37,12 @@ const designProjectsArray=[{project:<iframe
       repoLink: "https://github.com/Tino1017/Help-Connect",
     },
     {
-      projectImage: kickCraze,
-      projectName: "Kick Craze",
+      projectImage: sanakin,
+      projectName: "Sanakin.IK",
       description:
-        "This is a web Application where users can shop for sneakers. This web app contains features like video call and a student community",
-      liveDemo: "https://github.com/Tino1017/Kick-Craze",
-      repoLink: "https://kick-craze.vercel.app/...",
+        "This is a Eccormece web application where users can shop for any products.",
+      liveDemo: "https://github.com/Tino1017/Eccormerce-Project",
+      repoLink: "https://eccormerce-project.vercel.app/",
     },
   ];
   const technologiesUsed = [
